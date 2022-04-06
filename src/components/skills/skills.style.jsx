@@ -2,31 +2,49 @@ import styled from 'styled-components';
 import FullHeight from 'react-full-height'
 
 export const SkillPage = styled(FullHeight)`
-  display:flex;
-  flex-direction: row;
+  
 `
 
 export const SkillComponent= styled.div`
+width:100%;
 display:flex;
-flex-direction: row;
+justify-content:center;
+
 `
 
-export const Title = styled.h2`
-  font-size: 38px;
-  margin: 0 auto 0px 10px;
-`;
+export const Title = styled.h1`
+    color:black;
+    font-weight:450;
+    padding: 2% 1% 0% 6%;
+    font-size: 3rem;
+    animation: 1s ease-out 0s 1 slideInFromleft;
+    @keyframes slideInFromleft{
+      0% {
+        transform: translate(-5%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+`
 
 export const SkillCard = styled.div`
-  width: 35%;
-  height: 70vh;
+  width: 70%;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
-  margin:5vw;
-  box-shadow: 5px 5px 5px  #02aab0;
+  align-items:center;
+  justify-content:flex-start;
+  flex-direction:column;
+  box-shadow: 18px 18px 30px #D1D9E6;
+  opacity:100%;
   overflow:hidden;
-  &:hover{
-    ProjectTitle{
-      color:red;
-    }
-  }
+  
+`
+
+export const Icons1 = styled.div`
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin:4%;
 `

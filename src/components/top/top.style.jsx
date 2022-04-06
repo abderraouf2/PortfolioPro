@@ -18,16 +18,17 @@ export const HeadContainer = styled.h1`
     text-align: left;   
     display: block;
     padding-top:12%;
-    animation: 1s ease-out 0s 1 slideInFromleft;
-    @keyframes slideInFromleft{
-      0% {
-        transform: translate(-5%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+    @media screen and (max-width: 992px) {
+      font-size:2rem;
+      font-weight: 500;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      margin-left:0;
     }
-`
+    `
+
 export const Span = styled.span`
     background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
     -webkit-background-clip: text;

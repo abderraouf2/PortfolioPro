@@ -14,6 +14,10 @@ export const ProjectCard = styled.div`
   margin:3vw;
   box-shadow: 5px 5px 5px  #02aab0;
   overflow:hidden;
+  @media screen and (max-width: 992px){
+    width:80vw;
+    height:28vh
+  }
 `
 
 export const Image= styled.img`

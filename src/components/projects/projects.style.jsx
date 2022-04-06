@@ -26,4 +26,8 @@ export const Title = styled.h1`
         transform: translateX(0);
       }
     }
+    @media screen and (max-width: 992px) {
+      font-size:2.5rem;
+      font-weight: 500;
+    }
 `

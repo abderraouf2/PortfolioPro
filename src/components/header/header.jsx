@@ -4,8 +4,13 @@ import './header.scss';
 
 export default function header () {
   return (
-    <HeaderContainer className='navBar'>
-      <LogoContainer to='/'>
+    <HeaderContainer >
+      <LogoContainer  activeClass="active"
+                      to="top"
+                      spy={true}
+                      smooth={true}
+                      offset={-60}
+                      duration={1000}>
         Abderraouf
       </LogoContainer>
       <OptionsContainer>
@@ -14,7 +19,7 @@ export default function header () {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-30}
+                    offset={-60}
                     duration={1000}>
           Contact
         </OptionLink>
@@ -23,7 +28,7 @@ export default function header () {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-30}
+                    offset={-60}
                     duration={1000}>
           About
         </OptionLink>
@@ -32,7 +37,7 @@ export default function header () {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={-30}
+                    offset={-70}
                     duration={1000}>
           Projects
         </OptionLink>

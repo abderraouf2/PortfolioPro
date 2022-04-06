@@ -2,19 +2,19 @@ import React from 'react';
 
 import { TopContainer,HeadContainer,Span } from './top.style';
 import Header from '../header/header';
+import Zoom from 'react-reveal/Zoom'
 
-
-export default function top() {
+export default function Top() {
   return (
-    <TopContainer>
+    <TopContainer id='top'>
       <Header />
       <HeadContainer>
+      <Zoom left cascade>
         Hello, my name is &nbsp;
-        <Span>
-          Abderraouf 
-        </Span>
-        <br />
+        <Zoom right ><Span>Abderraouf</Span></Zoom>
+        
         and I'm a web developer
+      </Zoom>
       </HeadContainer>
     </TopContainer>
   )
