@@ -1,3 +1,5 @@
-.App {
+body {
   width: 100%;
+  background-color: #ece8e8;
+  overflow-x: hidden;
 }

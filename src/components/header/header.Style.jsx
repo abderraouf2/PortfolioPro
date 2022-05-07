@@ -4,7 +4,6 @@ import { css } from "styled-components";
 
 
 export const HeaderContainer= styled.div`
-
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -12,8 +11,8 @@ margin-bottom: 3%;
 top:0;
 position:fixed;
 z-index:3;
-background-color:#ECF0F3;
-box-shadow:12px 12px 30px #D1D9E6;
+background-color:none;
+box-shadow:5px 5px 5px #D1D9E6;
 opacity:100%;
 `
 const sharedProps = css`

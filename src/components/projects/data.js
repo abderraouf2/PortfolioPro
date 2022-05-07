@@ -1,12 +1,12 @@
-
+import Phone from './img/phone.png'
 
 export const DATA = [
   {
     id:1,
-    img: 'https://www.presse-citron.net/app/uploads/2019/01/Apple.jpg',
+    img: Phone,
     title:'E-commerce',
-    description:'aaaa',
-    url:''
+    description:'A website where you can view, add to a cart and pay for products (clothes)',
+    url:'https://raoufs-clothing.herokuapp.com'
   },
   {
     id:2,

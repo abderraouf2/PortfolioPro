@@ -3,10 +3,14 @@ import styled from 'styled-components';
 
 export const Trapez = styled.div`
     width:100%;
-    height: 100vh;
-    background-color: #02aab0;
+    height: 90vh;
+    background-color: #0F5257;
     clip-path: polygon(0% 0%,0 85%, 100% 60%, 100% 0);
     margin: 0;
+    @media screen and (max-width: 992px){
+      clip-path:none;
+      height:70vh
+    }
 `
 
 export const Title = styled.h1`

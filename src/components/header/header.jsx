@@ -9,26 +9,17 @@ export default function header () {
                       to="top"
                       spy={true}
                       smooth={true}
-                      offset={-60}
+                      offset={-70}
                       duration={1000}>
         Abderraouf
       </LogoContainer>
       <OptionsContainer>
         <OptionLink 
                     activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={1000}>
-          Contact
-        </OptionLink>
-        <OptionLink 
-                    activeClass="active"
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-70}
                     duration={1000}>
           About
         </OptionLink>
@@ -40,6 +31,15 @@ export default function header () {
                     offset={-70}
                     duration={1000}>
           Projects
+        </OptionLink>
+        <OptionLink 
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}>
+          Contact
         </OptionLink>
       </OptionsContainer>
     </HeaderContainer>

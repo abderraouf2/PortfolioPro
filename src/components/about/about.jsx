@@ -1,15 +1,15 @@
 import React from 'react';
 
 import { Trapez,Title,Container,Image, Discription } from './about.style';
-import Zoom from 'react-reveal/Zoom';
+import {Zoom, Fade } from 'react-reveal';
 
 export default function about() {
   return (
     <Trapez id='about'>
       <Title>
-      <Zoom left cascade>
+      <Fade left cascade>
         About :
-      </Zoom>
+      </Fade>
       </Title>
       <Container>
       <Zoom>

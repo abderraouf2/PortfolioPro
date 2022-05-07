@@ -1,21 +1,25 @@
 import React from 'react';
 
-import { TopContainer,HeadContainer,Span } from './top.style';
+import { TopContainer,HeadContainer,Span,Div } from './top.style';
 import Header from '../header/header';
-import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade';
+import Three from '../three-d/three';
+
 
 export default function Top() {
   return (
     <TopContainer id='top'>
       <Header />
       <HeadContainer>
-      <Zoom left cascade>
+      <Fade left cascade>
         Hello, my name is &nbsp;
-        <Zoom right ><Span>Abderraouf</Span></Zoom>
-        
+        <Fade left cascade ><Span>Abderraouf</Span></Fade>
         and I'm a web developer
-      </Zoom>
+      </Fade>
       </HeadContainer>
+      <Div>
+      <Three />
+      </Div>
     </TopContainer>
   )
 }

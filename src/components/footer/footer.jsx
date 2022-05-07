@@ -1,10 +1,27 @@
 import React from 'react';
-import { Footer } from './footer.style'
+import { Footer,A } from './footer.style';
+import { Title } from '../about/about.style';
+import { Fade } from 'react-reveal';
+import SkillIcon from '../../icons/skillIcon';
+import { Icons1 } from '../skills/skills.style';
+import { icons } from './icons';
+
+
 
 export default function footer() {
   return (
-    <Footer>
-      hellooo
+    <Footer id='contact'>
+      <Title>
+        <Fade>
+         You can find me on :
+        </Fade>
+      </Title>
+      <Icons1>
+        {
+          icons.map(icon=><A href={icon.to}> <SkillIcon image={icon.icon} title={icon.title} /></A> )
+        }
+      </Icons1>
+        <a href="#" class="fa fa-twitter"></a>
     </Footer>
   )
 }
