@@ -105,6 +105,6 @@ export const CustomButtonContainer= styled.a`
     border: 1px solid black;
   }
   @media screen and (max-width: 992px) {
-    
+    font-size:0.5rem
   }
 `
