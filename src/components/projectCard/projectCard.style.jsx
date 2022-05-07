@@ -7,7 +7,7 @@ export const ProjectTitle = styled.h2`
   @media screen and (max-width: 992px) {
     width:100%;
     height:100%;
-    font-size:1rem
+    font-size:2rem
   }
 `;
 
@@ -40,7 +40,9 @@ export const ProjectCard = styled.div`
   @media screen and (max-width: 992px){
     margin:2%;
     width:80vw;
-    height:28vh;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
   }
 `
 
@@ -55,7 +57,7 @@ export const Image= styled.img`
   }
   @media screen and (max-width: 992px){
     margin:2%;
-    width:80vw;
+    width:70%;
     height:auto;
   }
 `
@@ -103,8 +105,6 @@ export const CustomButtonContainer= styled.a`
     border: 1px solid black;
   }
   @media screen and (max-width: 992px) {
-    width:15vw;
-    height:5vh;
-    font-size:.5rem
+    
   }
 `
