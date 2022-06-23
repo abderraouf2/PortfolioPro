@@ -1,6 +1,46 @@
 
 
 .active{
-  border: 3px solid rgb(98, 97, 97);
-  border-radius: 50%;
+  border-bottom: 3px solid #464c47;
 }
+
+.humburger{
+  position: absolute;
+  right: 15%;
+  margin-top: 5px;
+  cursor:pointer;
+  z-index: 3;
+}
+.Mobile{
+  display: none;
+}
+.logo{
+  border-bottom: 3px solid #464c47;
+}
+
+
+@media screen and (max-width: 992px) {
+  .Navigation{
+    display: none; 
+  }
+  .Mobile{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+ .navlinks{
+    
+    width:100%;
+    left:0; 
+    position:absolute;
+    z-index:2;
+    padding: 0;
+    margin: 0;
+ }
+ .active{
+  border-bottom: 3px solid white;
+}
+  
+}
+
+

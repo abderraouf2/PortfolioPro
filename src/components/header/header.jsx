@@ -1,47 +1,23 @@
 import React from 'react';
-import { LogoContainer,HeaderContainer,OptionsContainer,OptionLink } from './header.Style';
+import { LogoContainer,HeaderContainer } from './header.Style';
 import './header.scss';
+import Mobile from './mobile';
+import Navigation from './Navigation';
 
-export default function header () {
+
+export default function Header () {
   return (
     <HeaderContainer >
-      <LogoContainer  activeClass="active"
+      <LogoContainer  activeClass="logo"
                       to="top"
                       spy={true}
                       smooth={true}
                       offset={-70}
                       duration={1000}>
-        Abderraouf
+        Mimoune Abderraouf
       </LogoContainer>
-      <OptionsContainer>
-        <OptionLink 
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={1000}>
-          About
-        </OptionLink>
-        <OptionLink 
-                    activeClass="active"
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={1000}>
-          Projects
-        </OptionLink>
-        <OptionLink 
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={1000}>
-          Contact
-        </OptionLink>
-      </OptionsContainer>
+      <Navigation />
+      <Mobile />
     </HeaderContainer>
   )
 }

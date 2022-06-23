@@ -21,7 +21,7 @@ export default function footer() {
           icons.map(icon=><A href={icon.to}> <SkillIcon image={icon.icon} title={icon.title} /></A> )
         }
       </Icons1>
-        <a href="#" class="fa fa-twitter"></a>
+        {/* <a href="https://react-icons.github.io/react-icons/search?q=close" class="fa fa-twitter"></a>  */}
     </Footer>
   )
 }

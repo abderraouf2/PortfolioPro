@@ -13,12 +13,15 @@ export const ProjectTitle = styled.h2`
 
 export const Details = styled.div`
   width:60%;
-  height: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left:2%;
-  
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   @media screen and (max-width: 992px) {
     width:100%;
     height:55%;
@@ -27,10 +30,10 @@ export const Details = styled.div`
 `
 
 export const ProjectCard = styled.div`
-  width: 95%;
-  height: 30%;
+  width: 100%;
+  height: 100vh;
   background-color:none;
-  margin:2%;
+  margin:5% 2%;
   box-shadow:5px 5px 5px #D1D9E6;
   display: flex;
   align-items:center;
@@ -38,17 +41,18 @@ export const ProjectCard = styled.div`
   overflow:hidden;
   padding:0;
   @media screen and (max-width: 992px){
-    margin:2%;
-    width:80vw;
-    height:70vh;
+    margin:2% 0;
+    width:100%;
+    height:80vh;
     display: flex;
     flex-direction: column;
   }
 `
 
 export const Image= styled.img`
-  width: 50%;
-  height:10%;
+  border:2px solid black;
+  width: 100%;
+  height:100vh;
   overflow:hidden;
   padding:0;
   &:hover{
@@ -57,27 +61,25 @@ export const Image= styled.img`
   }
   @media screen and (max-width: 992px){
     margin:2%;
-    width:70%;
-    height:auto;
+    width100%;
+    height:100%;
   }
 `
 export const ImageContainer = styled.div`
-  width:75%;
-  // height:90vh;
-  // background-color: black;
+  height:100%;
+  width:50%;
   margin-right:2%;
   border:2px solid black;
   display:flex;
+  overflow:hidden;
   align-items:flex-start;
   justify-content:flex-start;
-  // clip-path: polygon(40% 0%,0 100%, 100% 100%, 100% 0); 
-  // &:hover{
-  //   opacity:0.6
-  // }
+  &:hover{
+    opacity:0.9
+  }
   @media screen and (max-width: 992px) {
-    width:70%;
+    width:100%;
     height:100%;
-    
   }
 `
 
@@ -101,8 +103,8 @@ export const CustomButtonContainer= styled.a`
   border: none;
   transition:.5s;
   &:hover {
-    background-color: #0F5257;
-    border: 1px solid black;
+    background-color:#464c47;
+    
   }
   @media screen and (max-width: 992px) {
     font-size:0.5rem

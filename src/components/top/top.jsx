@@ -1,25 +1,40 @@
 import React from 'react';
+import './top.scss'
 
-import { TopContainer,HeadContainer,Span,Div } from './top.style';
+import { TopContainer,LeftHeadContainer,RightHeaderContainer,Image } from './top.style';
 import Header from '../header/header';
 import Fade from 'react-reveal/Fade';
-import Three from '../three-d/three';
+import { Zoom } from 'react-reveal';
+
 
 
 export default function Top() {
   return (
     <TopContainer id='top'>
       <Header />
-      <HeadContainer>
+      <LeftHeadContainer>
       <Fade left cascade>
-        Hello, my name is &nbsp;
-        <Fade left cascade ><Span>Abderraouf</Span></Fade>
-        and I'm a web developer
+        CREATIVE
+        <br />
+        DEVELOPER
+        <br />
+        <Zoom>
+        <Image />
+        </Zoom>
       </Fade>
-      </HeadContainer>
-      <Div>
-      <Three />
-      </Div>
+      </LeftHeadContainer>
+      <RightHeaderContainer>
+        <div className='bottom'>
+        <Fade left cascade >
+          MIMOUNE
+          <br />
+          ABDERRAOUF
+        </Fade>
+        <p>
+        &#x21C3;
+        </p>
+        </div>
+      </RightHeaderContainer>
     </TopContainer>
   )
 }

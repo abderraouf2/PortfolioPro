@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectPage = styled.div`
+margin-top:15%
 `
 
 export const ProjectsContainer = styled.div`

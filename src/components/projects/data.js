@@ -4,7 +4,7 @@ export const DATA = [
   {
     id:1,
     img: Phone,
-    title:'E-commerce',
+    title:'Clothing-Brand',
     description:'A website where you can view, add to a cart and pay for products (clothes)',
     url:'https://raoufs-clothing.herokuapp.com'
   },

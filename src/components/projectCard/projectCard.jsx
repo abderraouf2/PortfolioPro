@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectTitle,ProjectCard,Image,Details,ImageContainer,CustomButtonContainer } from './projectCard.style';
+import { ProjectTitle,ProjectCard,Image,Details,CustomButtonContainer,ImageContainer } from './projectCard.style';
 
 import Zoom from 'react-reveal/Zoom';
 
@@ -7,6 +7,7 @@ import Zoom from 'react-reveal/Zoom';
 
 export default function projectCard({title,image, desc,url}) {
   return (
+    <div style={{height:'100vh',width:'100%',padding:'0 5%',marginBottom:'10%'}}>
     <Zoom>
       <ProjectCard>
         <Details>  
@@ -15,11 +16,12 @@ export default function projectCard({title,image, desc,url}) {
         <CustomButtonContainer href={url}>
            Live preview
            </CustomButtonContainer>
-        
         </Details>
-        <Image src={image}  />
-        
+        <ImageContainer>
+          <Image src={image} />
+        </ImageContainer>
       </ProjectCard>
     </Zoom>
+    </div>
   )
 }

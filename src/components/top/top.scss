@@ -11,3 +11,10 @@ Header{
 //   float: left;
 // }
 
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+p{
+  float: left;
+}
