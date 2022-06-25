@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectsContainer,ProjectPage } from './projects.style';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import { Title,Paragraph,Container,Description,Text } from '../about/about.style';
 import { DATA } from './data';
 
@@ -9,15 +9,15 @@ import ProjectCard from '../projectCard/projectCard';
 export default function projects() {
   return (
     <ProjectPage id='projects'>
-      <Container>
+      <Container style={{flexDirection:'row',marginBottom:'3vh'}}>
       <Paragraph>
         02/
       </Paragraph>
-      <Description>
-        <Text>
-          recent projects
-        </Text>
-      </Description>
+      <Description style={{flexDirection:'row',justifyContent:'space-around',marginTop:'0vh'}}>
+              <p style={{fontSize:'20px',fontWeight:'400',lineHeight:'1.32',width:'20%',marginTop:'5vh'}} >
+                RECENT PROJECTS
+              </p>
+              </Description>
       </Container>
       <ProjectsContainer>
         {

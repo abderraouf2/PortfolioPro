@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
 
-export const ProjectTitle = styled.h2`
-  font-size: 38px;
+export const ProjectTitle = styled.a`
+  font-size: 52px;
   margin: 0 auto 0px 10px;
+  font-weight:500;
   @media screen and (max-width: 992px) {
     width:100%;
     height:100%;
-    font-size:2rem
+    font-size:2rem;
   }
 `;
 
@@ -22,6 +23,7 @@ export const Details = styled.div`
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
+  margin-top:2vh;
   @media screen and (max-width: 992px) {
     width:100%;
     height:55%;
@@ -29,14 +31,15 @@ export const Details = styled.div`
   }
 `
 
-export const ProjectCard = styled.div`
-  width: 100%;
-  height: 100vh;
+export const Projectcard = styled.div`
+  width: 95%;
+  height: fit-content;
   background-color:none;
   margin:5% 2%;
+  margin-right:7%;
   box-shadow:5px 5px 5px #D1D9E6;
   display: flex;
-  align-items:center;
+  align-items:flex-start;
   flex-direction: row;
   overflow:hidden;
   padding:0;
@@ -52,30 +55,30 @@ export const ProjectCard = styled.div`
 export const Image= styled.img`
   border:2px solid black;
   width: 100%;
-  height:100vh;
+  height:fit-content;
   overflow:hidden;
   padding:0;
-  &:hover{
-    transform:scale(1.1);
-    transition: transform 3s cubic-bezier(0.25,0.45,0.45,0.95);
-  }
+  // &:hover{
+  //   transform:scale(1.1);
+  //   transition: transform 3s cubic-bezier(0.25,0.45,0.45,0.95);
+  // }
   @media screen and (max-width: 992px){
     margin:2%;
     width100%;
     height:100%;
   }
 `
-export const ImageContainer = styled.div`
-  height:100%;
+export const ImageContainer = styled.a`
+  height:fit-content;
   width:50%;
   margin-right:2%;
-  border:2px solid black;
   display:flex;
   overflow:hidden;
   align-items:flex-start;
   justify-content:flex-start;
   &:hover{
-    opacity:0.9
+    opacity:0.9;
+    cursor:none
   }
   @media screen and (max-width: 992px) {
     width:100%;

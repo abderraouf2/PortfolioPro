@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 
 export const ProjectPage = styled.div`
-margin-top:15%
+margin-top:15%;
+@media screen and (max-width: 992px) {
+  overflow-x:hidden
+}
 `
 
 export const ProjectsContainer = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-  @media screen and (max-width: 992px) {
-   
-  }
+  
 `;
 
 export const Title = styled.h1`

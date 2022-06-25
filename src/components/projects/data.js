@@ -1,9 +1,10 @@
 import Phone from './img/phone.png'
+import Clothing from './img/clothing.png'
 
 export const DATA = [
   {
     id:1,
-    img: Phone,
+    img: Clothing,
     title:'Clothing-Brand',
     description:'A website where you can view, add to a cart and pay for products (clothes)',
     url:'https://raoufs-clothing.herokuapp.com'

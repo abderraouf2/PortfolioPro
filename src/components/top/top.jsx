@@ -5,6 +5,7 @@ import { TopContainer,LeftHeadContainer,RightHeaderContainer,Image } from './top
 import Header from '../header/header';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
+import Raouf from './raouf1.png'
 
 
 
@@ -19,7 +20,7 @@ export default function Top() {
         DEVELOPER
         <br />
         <Zoom>
-        <Image />
+        <Image src={Raouf} />
         </Zoom>
       </Fade>
       </LeftHeadContainer>

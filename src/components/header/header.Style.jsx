@@ -11,6 +11,7 @@ justify-content: space-between;
 margin-bottom: 3%;
 padding-right:40px;
 top:0;
+margin-top:1%;
 position:fixed;
 z-index:3;
 background-color:none;

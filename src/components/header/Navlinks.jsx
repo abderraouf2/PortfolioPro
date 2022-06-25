@@ -19,7 +19,7 @@ export default function Navlinks({CloseNav}) {
                     duration={1000}
                     onClick={CloseNav}
                     > 
-          About
+          ABOUT
         </OptionLink>
         
         <OptionLink 
@@ -42,7 +42,7 @@ export default function Navlinks({CloseNav}) {
                     duration={1000}
                     onClick={CloseNav}
                     >
-          Contact
+          CONTACT
         </OptionLink>
       </OptionsContainer>
         </Fade>

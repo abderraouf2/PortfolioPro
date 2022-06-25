@@ -1,0 +1,29 @@
+
+
+.email{
+  font-size: 5rem;
+  color: black;
+  text-decoration: none;
+  background: 
+  linear-gradient(to right, rgb(53, 65, 56), rgb(0, 0, 0)),
+  linear-gradient(to right, rgb(52, 67, 56), rgb(233, 233, 233), rgb(194, 194, 194));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  cursor: none;
+  @media screen and (max-width: 992px){
+    font-size: 2rem;
+    line-height: 1;
+    background: none;
+    text-decoration: underline;
+  }
+}
+.email:hover,
+.email:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+
+

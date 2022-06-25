@@ -1,22 +1,15 @@
 export const icons = [
   {
-    icon:'https://www.pngkey.com/png/full/188-1888373_vimeo-logo-vimeo-logo-linkedin-icon-png-black.png',
+    
     title: 'LinkedIn',
-    to:'https://www.google.com/'
+    to:'linkedin.com/in/abderraouf-mimoune-2290971a4'
   },
   {
-    icon:'https://cdn-icons-png.flaticon.com/512/561/561127.png',
-    title: 'Email',
-    to:''
+    title: 'twitter',
+    to:'https://twitter.com/Abderraouf29'
   },
   {
-    icon:'https://cdn-icons-png.flaticon.com/512/87/87390.png',
-    title: 'instagram',
-    to:'http://www.w3schools.com'
-  },
-  {
-    icon:'',
-    title: 'resume',
-    to:''
+    title: 'github',
+    to:'https://github.com/abderraouf2/'
   },
 ]

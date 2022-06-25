@@ -19,10 +19,11 @@ const Shared = css`
     width:100vw;
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Heebo', sans-serif;
-    font-size: 5.6rem;
+    font-size: 94px;
     font-weight: 700;
     line-height:6vh;  
     padding-top:2%;
+    margin-top:15vh;
     @media screen and (max-width: 992px) {
       height:35%;
       width:100%;
@@ -67,11 +68,10 @@ export const Span = styled.span`
 `
 
 export const Image = styled.img`
-  border:2px solid black;
-  height: 30vh;
+  height: auto;
   width:40%;
   @media screen and (max-width: 992px) {
-    width:60%;
+    width:80%;
   }
 `
 
