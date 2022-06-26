@@ -53,7 +53,7 @@ export const Projectcard = styled.div`
 `
 
 export const Image= styled.img`
-  border:2px solid black;
+  
   width: 100%;
   height:fit-content;
   overflow:hidden;

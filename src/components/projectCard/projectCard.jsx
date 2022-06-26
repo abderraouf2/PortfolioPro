@@ -7,6 +7,10 @@ import '../footer/footer.style.scss';
 import './projectcard.scss'
 
 
+const onload = () =>{
+  console.log('loadded');
+}
+
 
 export default function ProjectCard({title,image, desc,url}) {
   const [cursorX, setCursorX] = useState();
@@ -50,6 +54,8 @@ export default function ProjectCard({title,image, desc,url}) {
                 onMouseEnter={()=>{
                   setmouseIn(true)
                 }}
+                onLoad={onload}
+                
                 />
           
         </ImageContainer>

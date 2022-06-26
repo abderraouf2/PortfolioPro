@@ -9,7 +9,7 @@ import Raouf from './raouf1.png'
 
 
 
-export default function Top() {
+export default function Top({setloadded}) {
   return (
     <TopContainer id='top'>
       <Header />
@@ -20,7 +20,7 @@ export default function Top() {
         DEVELOPER
         <br />
         <Zoom>
-        <Image src={Raouf} />
+        <Image src={Raouf} onLoad={()=>{setloadded(true)}} />
         </Zoom>
       </Fade>
       </LeftHeadContainer>
