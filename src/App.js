@@ -12,7 +12,7 @@ import Loader from'./components/loader/Loader'
 
 function App() {
   const [loader,setLoader] = useState(true);
-  const [loadded, setloadded] = useState(true);
+  const [loadded, setloadded] = useState(false);
   useEffect(()=>{
     setTimeout(()=>{
       setLoader(false);
