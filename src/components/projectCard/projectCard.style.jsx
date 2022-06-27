@@ -37,7 +37,7 @@ export const Projectcard = styled.div`
   background-color:none;
   margin:5% 2%;
   margin-right:7%;
-  box-shadow:5px 5px 5px #D1D9E6;
+  // box-shadow:5px 5px 5px #D1D9E6;
   display: flex;
   align-items:flex-start;
   flex-direction: row;
@@ -46,7 +46,7 @@ export const Projectcard = styled.div`
   @media screen and (max-width: 992px){
     margin:2% 0;
     width:100%;
-    height:80vh;
+    
     display: flex;
     flex-direction: column;
   }
@@ -65,7 +65,8 @@ export const Image= styled.img`
   @media screen and (max-width: 992px){
     margin:2%;
     width100%;
-    height:100%;
+    height:auto;
+    opacity:.85
   }
 `
 export const ImageContainer = styled.a`
@@ -82,7 +83,6 @@ export const ImageContainer = styled.a`
   }
   @media screen and (max-width: 992px) {
     width:100%;
-    height:100%;
   }
 `
 

@@ -58,10 +58,17 @@ export default function ProjectCard({title,image, desc,url}) {
                 
                 />
           
+        <div className='see-more'>
+              <div className='more'>
+              See <br />
+              more
+              </div>
+        </div>
         </ImageContainer>
       </Projectcard>
     </Zoom>
         <Cursor mouseIn={mouseIn} className='a' cursorX={cursorX} cursorY={cursorY} text='view more'/>
+        
     </div>
   )
 }
