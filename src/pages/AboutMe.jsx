@@ -1,15 +1,18 @@
 import React from 'react';
 
-import { Trapez,Container,Text, Description,Paragraph } from './about.style';
-import { CustomButtonContainer } from '../projectCard/projectCard.style'
+import { Trapez,Container,Text, Description,Paragraph } from '../components/about/about.style';
+import { CustomButtonContainer } from '../components/projectCard/projectCard.style';
+import Header from '../components/header/header';
 // import  Fade  from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+
 
 export default function about() {
   return (
-    <Trapez id='about'>
-      <Container>
+    <Trapez id='about' >
+      <Header />
+      <Container style={{marginTop: '20vh'}}>
         <Paragraph>
           01/
         </Paragraph>
@@ -31,8 +34,6 @@ export default function about() {
           </p>
           </Slide>
         <h3>
-          Want to know more about me ?
-          <br />
           <CustomButtonContainer href='/about'>
             CHECK OUT MY CV
           </CustomButtonContainer>

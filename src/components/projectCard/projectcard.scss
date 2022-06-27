@@ -6,7 +6,9 @@
   @media screen and (max-width: 992px){
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 75%;
+    margin-top: 0;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;

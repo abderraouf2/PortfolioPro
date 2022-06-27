@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-
+import { Switch,Route } from "react-router-dom";
 
 import Loader from'./components/loader/Loader'
 import Home from './pages/Home';
-
+// import AboutMe from './pages/AboutMe'
 
 
 
@@ -25,9 +25,14 @@ function App() {
   
   : (
         <div className='app'>
-          
+          <Switch>
+            <Route exact path='/' >
             <Home /> 
-           
+            </Route>
+            {/* <Route exact path='/about' >
+            <AboutMe /> 
+            </Route> */}
+          </Switch>
             {/* 
             <Skills />
           */}
