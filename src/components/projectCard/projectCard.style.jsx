@@ -47,7 +47,6 @@ export const Projectcard = styled.div`
     margin:2% 0;
     width:100%;
     height:100%;
-    border:2px solid black;
     display: flex;
     flex-direction: column;
   }
