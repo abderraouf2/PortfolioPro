@@ -5,11 +5,11 @@ import { TopContainer,LeftHeadContainer,RightHeaderContainer,Image } from './top
 import Header from '../header/header';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
-import Raouf from './raouf1.png'
+import Raouf from './raouf1.png';
 
 
 
-export default function Top({setloadded}) {
+export default function Top({ImgLoadded}) {
   return (
     <TopContainer id='top'>
       <Header />
@@ -20,7 +20,7 @@ export default function Top({setloadded}) {
         DEVELOPER
         <br />
         <Zoom>
-        <Image src={Raouf} onLoad={()=>{setloadded(true)}} />
+        <Image src={Raouf} onLoad={()=>{ImgLoadded()}} />
         </Zoom>
       </Fade>
       </LeftHeadContainer>
