@@ -2,7 +2,7 @@ export const icons = [
   {
     
     title: 'LinkedIn',
-    to:'linkedin.com/in/abderraouf-mimoune-2290971a4'
+    to:'https://linkedin.com/in/abderraouf-mimoune-2290971a4'
   },
   {
     title: 'twitter',

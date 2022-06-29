@@ -5,7 +5,6 @@ export const Trapez = styled.div`
     width:100%;
     overflow-x:hidden;
     margin: 0;
-    
 `
 
 export const Title = styled.h1`

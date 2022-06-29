@@ -25,16 +25,16 @@ const Shared = css`
     padding-top:2%;
     margin-top:15vh;
     @media screen and (max-width: 992px) {
+      line-height:0.5;  
       height:35%;
       width:100%;
-      font-size:3rem;
+      font-size:56px;
       font-weight: 500;
       display: flex;
       margin-bottom:2%;
       flex-direction:column;
       margin-left:0;
       margin-top:20vh;
-      line-height:4vh; 
     }
 `
 

@@ -4,7 +4,6 @@ import { Trapez,Container,Text, Description,Paragraph } from './about.style';
 import { CustomButtonContainer } from '../projectCard/projectCard.style'
 // import  Fade  from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import { Link } from 'react-router-dom';
 
 export default function about() {
   return (
@@ -34,7 +33,7 @@ export default function about() {
           Want to know more about me ?
           <br />
           <CustomButtonContainer href='/about'>
-            CHECK OUT MY CV
+            more about me
           </CustomButtonContainer>
         </h3>
         

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectsContainer,ProjectPage } from './projects.style';
 // import Fade from 'react-reveal/Fade';
-import { Title,Paragraph,Container,Description,Text } from '../about/about.style';
+import { Paragraph,Container,Description } from '../about/about.style';
 import { DATA } from './data';
 
 import ProjectCard from '../projectCard/projectCard';

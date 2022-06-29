@@ -1,59 +1,38 @@
 export const icons= [
   {
     id:1,
-    logo:'https://e7.pngegg.com/pngimages/452/495/png-clipart-react-javascript-angularjs-ionic-github-text-logo.png',
+    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
     title:'react'
   },
   {
     id:2,
-    logo:'https://img.favpng.com/6/2/11/redux-react-javascript-freecodecamp-npm-png-favpng-6F2x50visKuC0trBQ0952Cm1E_t.jpg',
+    logo:'https://icon-library.com/images/react-icon/react-icon-28.jpg',
     title:'redux'
   },
   {
     id:3,
-    logo:'https://e7.pngegg.com/pngimages/33/52/png-clipart-sass-logo-cascading-style-sheets-scalable-graphics-less-text-logo-thumbnail.png',
+    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png',
     title:'scss'
   },
   {
     id:4,
-    logo:'https://img1.freepng.fr/20180426/rwq/kisspng-firebase-cloud-messaging-google-developers-softwar-5ae1d9fd416102.1403209115247508452678.jpg',
+    logo:'http://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png',
     title:'firebase'
   },
   {
     id:5,
-    logo:'https://toppng.com/uploads/preview/html5-logo-vector-free-download-11574222422da5narngo7.png',
-    title:'html5'
+    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png',
+    title:'HTML5'
   },
   {
     id:6,
-    logo:'https://e1.pngegg.com/pngimages/326/868/png-clipart-css3-badge-blue-and-white-css-icon.png',
-    title:'css3'
+    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png',
+    title:'CSS3'
   },
   
   {
     id:7,
     logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png',
-    title:'javascript'
-  },
- 
-  {
-    logo:'',
-    title:''
-  },
-  {
-    logo:'',
-    title:''
-  },
-  {
-    logo:'',
-    title:''
-  },
-  {
-    logo:'',
-    title:''
-  },
-  {
-    logo:'',
-    title:''
+    title:'JS'
   }
 ]

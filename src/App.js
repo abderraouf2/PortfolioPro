@@ -4,7 +4,7 @@ import { Switch,Route } from "react-router-dom";
 
 import Loader from'./components/loader/Loader'
 import Home from './pages/Home';
-// import AboutMe from './pages/AboutMe'
+import AboutMe from './pages/AboutMe/AboutMe';
 
 
 
@@ -17,7 +17,7 @@ function App() {
   useEffect(()=>{
       setTimeout(()=>{
         setLoader(false)
-      },4000)
+      },4)
   },[])
   return loader ? (
     <Loader />
@@ -29,9 +29,9 @@ function App() {
             <Route exact path='/' >
             <Home /> 
             </Route>
-            {/* <Route exact path='/about' >
+            <Route exact path='/about' >
             <AboutMe /> 
-            </Route> */}
+            </Route>
           </Switch>
             {/* 
             <Skills />

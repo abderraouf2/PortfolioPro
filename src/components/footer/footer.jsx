@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Footer1,A,Email,Contact } from './footer.style';
 import { Fade } from 'react-reveal';
-import SkillIcon from '../../icons/skillIcon';
 import { icons } from './icons';
 import {Container,Paragraph,Description} from '../about/about.style';
 import './footer.style.scss';
@@ -51,14 +50,14 @@ export default function Footer() {
                   setmouseIn(true)
                 }}
              className='email' href='mailto:raoufmim29@gmail.com' >
-                  abderraouf.mimoune<br />
+                  abderraouf.<br className='br' />mimoune<br />
                   @inttic.dz
             </a>
          <Cursor mouseIn={mouseIn} cursorX={cursorX} cursorY={cursorY} text='send me an email' />
           </Email>
       <Contact>
         {
-          icons.map(icon=><A className='email' style={{cursor:'pointer'}} href={icon.to}> <SkillIcon style={{marginBottom:'0px',padding:'0px'}} image={icon.icon} title={icon.title} /></A> )
+          icons.map(icon=><A className='email' style={{cursor:'pointer'}} href={icon.to}> {icon.title} </A> )
         }
       </Contact>
         {/* <a href="https://react-icons.github.io/react-icons/search?q=close" class="fa fa-twitter"></a>  */}

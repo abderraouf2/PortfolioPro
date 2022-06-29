@@ -1,4 +1,4 @@
-import Phone from './img/phone.png'
+
 import Clothing from './img/clothing.png'
 
 export const DATA = [

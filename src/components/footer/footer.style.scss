@@ -12,9 +12,11 @@
   background-repeat: no-repeat;
   transition: background-size 400ms;
   cursor: none;
+  text-transform: uppercase;
   @media screen and (max-width: 992px){
-    font-size: 2rem;
-    line-height: 1;
+    font-size: 56px;
+    width: 70%;
+    line-height: 1.32;
     background: none;
     text-decoration: underline;
   }
@@ -22,6 +24,12 @@
 .email:hover,
 .email:focus {
 	background-size: 0 0.1em, 100% 0.1em;
+}
+.br{
+  display: none;
+  @media screen and (max-width: 992px){
+    display: flex;
+  }
 }
 
 

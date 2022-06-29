@@ -10,8 +10,10 @@ export const Footer1 = styled.footer`
 export const Email = styled.h1`
   width:93%;
   height:30vh;
-  font-size:3rem;
-  margin:5% 5%;
+  margin:7% 5%;
+  @media screen and (max-width: 992px){
+    margin:30% 5%;
+  }
 
 `
 
@@ -35,6 +37,7 @@ export const A = styled.a`
 export const Contact = styled.div`
   display:flex; 
   justify-content:center;
+  margin-bottom:5%;
   @media screen and (max-width: 992px) {
     justify-content:flex-start;
     margin
