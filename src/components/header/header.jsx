@@ -7,6 +7,7 @@ import Navigation from './Navigation';
 
 export default function Header () {
   return (
+    <div className='headerBg'>
     <HeaderContainer >
       <LogoContainer  activeClass="logo"
                       to="top"
@@ -19,5 +20,6 @@ export default function Header () {
       <Navigation />
       <Mobile />
     </HeaderContainer>
+    </div>
   )
 }

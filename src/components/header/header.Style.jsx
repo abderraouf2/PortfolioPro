@@ -14,7 +14,10 @@ top:0;
 margin-top:1%;
 position:fixed;
 z-index:3;
-background-color:none;
+background-image: linear-gradient(to bottom, var(--gradient-stops));
+
+--gradient-from: var(--black);
+--gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
 opacity:100%;
 left:0
 
@@ -78,6 +81,7 @@ ${sharedProps};
   lign-height:1.25;
   text-transform: uppercase;
   font-weight:600;
-  padding:0
+  padding:0;
+  margin: 5% 0;
 }
 `
