@@ -44,11 +44,12 @@ export const Projectcard = styled.div`
   
   padding:0;
   @media screen and (max-width: 992px){
-    margin:2% 0;
-    width:100%;
+    margin:5% 0;
+    width:99%;
     height:70vh;
     display: flex;
     flex-direction: column;
+    
   }
 `
 
@@ -73,9 +74,9 @@ export const Image= styled.img`
   //   transition: transform 3s cubic-bezier(0.25,0.45,0.45,0.95);
   // }
   @media screen and (max-width: 992px){
-    margin:2%;
+    margin:1%;
     opacity:.85;
-    
+    width:98%;
   }
 `
 export const ImageContainer = styled.a`
@@ -89,13 +90,12 @@ export const ImageContainer = styled.a`
   &:hover{
     opacity:0.9;
     cursor:none
-  }
+  };
+  
   @media screen and (max-width: 992px) {
     width:100%;
     height:100%;
     position: relative;
-    
-    
   }
 `
 

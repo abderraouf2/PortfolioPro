@@ -17,7 +17,7 @@ export default function ProjectCard({title,image, desc,url}) {
   const [cursorY, setCursorY] = useState();
   const [mouseIn, setmouseIn] = useState(false);
   return (
-    <div style={{height:'100vh',width:'100%',padding:'0 5%',marginBottom:'3%',overflowX:'hidden'}}>
+    <div className='container' >
     <Zoom>
       <Projectcard>
         <Details>  

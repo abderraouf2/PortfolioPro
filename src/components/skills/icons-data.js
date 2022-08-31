@@ -2,7 +2,7 @@ export const icons= [
   {
     id:1,
     logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    title:'react'
+    title:'REACT.JS'
   },
   {
     id:2,
@@ -34,5 +34,10 @@ export const icons= [
     id:7,
     logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png',
     title:'JS'
+  },
+  {
+    id:8,
+    logo:'https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png',
+    title:'NEXT.JS'
   }
 ]

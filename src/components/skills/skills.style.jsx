@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-export const SkillPage = styled.div`
-  
-`
 
 export const SkillComponent= styled.div`
 width:100%;
+
 `
 
 export const Title = styled.h1`
@@ -33,9 +31,9 @@ export const SkillCard = styled.div`
 `
 
 export const Icons1 = styled.div`
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    margin:4%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin:4%;
 `
