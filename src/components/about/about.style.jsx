@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 export const Trapez = styled.div`
     width:100%;
-    overflow-x:hidden;
+    height:fit-content;
+    overflow:hidden;
     margin: 0;
 `
 

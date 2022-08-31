@@ -33,7 +33,7 @@ export const Details = styled.div`
 
 export const Projectcard = styled.div`
   width: 95%;
-  height: fit-content;
+  height: 80vh;
   background-color:none;
   margin:5% 2%;
   margin-right:7%;
@@ -41,22 +41,32 @@ export const Projectcard = styled.div`
   display: flex;
   align-items:flex-start;
   flex-direction: row;
-  overflow:hidden;
+  
   padding:0;
   @media screen and (max-width: 992px){
     margin:2% 0;
     width:100%;
-    height:100%;
+    height:70vh;
     display: flex;
     flex-direction: column;
   }
 `
 
 export const Image= styled.img`
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  border-radius: 0.375rem /* 6px */;
+  object-fit: cover;
+
+  object-position: center;
+  display: block;
+  width:100%;
+  max-width: 100%;
+  height:100%;
   
-  width: 100%;
-  height:100vh;
-  overflow:hidden;
   padding:0;
   // &:hover{
   //   transform:scale(1.1);
@@ -64,13 +74,12 @@ export const Image= styled.img`
   // }
   @media screen and (max-width: 992px){
     margin:2%;
-    width100%;
-    height:100%;
-    opacity:.85
+    opacity:.85;
+    
   }
 `
 export const ImageContainer = styled.a`
-  height:fit-content;
+  height:80vh;
   width:50%;
   margin-right:2%;
   display:flex;
@@ -84,6 +93,9 @@ export const ImageContainer = styled.a`
   @media screen and (max-width: 992px) {
     width:100%;
     height:100%;
+    position: relative;
+    
+    
   }
 `
 

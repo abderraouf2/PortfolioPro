@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Footer1 = styled.footer`
   margin-top:5vh;
+  height:90vh;
+  padding-top:10%;
+  overflow:hidden;
   @media screen and (max-width: 992px) {
    overflow-x:hidden
   }
