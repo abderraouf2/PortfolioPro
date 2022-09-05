@@ -1,0 +1,9 @@
+
+#projectContainer{
+  margin-bottom:3vh;
+  justify-content:flex-start;
+  margin: 0 30px;background-color:#141414;
+  @media screen and (max-width: 992px){
+    padding-top:30vh; 
+  }
+}

@@ -6,9 +6,10 @@ import './header.scss'
 
 
 export default function Navlinks({CloseNav}) {
+  
   return (
     <div className='navlinks'>
-      <Fade bottom >
+      <Fade right >
     <OptionsContainer classeName='options' >
         <OptionLink 
                     activeClass="active"

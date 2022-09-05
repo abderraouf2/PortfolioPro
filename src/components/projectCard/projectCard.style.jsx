@@ -24,6 +24,7 @@ export const Details = styled.div`
   font-size: 100%;
   line-height: 1.15;
   margin-top:2vh;
+  font-family: "Zilla Slab", serif;
   @media screen and (max-width: 992px) {
     width:100%;
     height:55%;
@@ -35,14 +36,12 @@ export const Projectcard = styled.div`
   width: 95%;
   height: 80vh;
   background-color:none;
-  margin:5% 2%;
+  margin:5% 2% ;
   margin-right:7%;
   // box-shadow:5px 5px 5px #D1D9E6;
   display: flex;
   align-items:flex-start;
   flex-direction: row;
-  
-  padding:0;
   @media screen and (max-width: 992px){
     margin:5% 0;
     width:99%;
@@ -58,10 +57,8 @@ export const Image= styled.img`
   right: 0px;
   bottom: 0px;
   left: 0px;
-
   border-radius: 0.375rem /* 6px */;
   object-fit: cover;
-
   object-position: center;
   display: block;
   width:100%;
@@ -82,7 +79,6 @@ export const Image= styled.img`
 export const ImageContainer = styled.a`
   height:80vh;
   width:50%;
-  margin-right:2%;
   display:flex;
   overflow:hidden;
   align-items:flex-start;
@@ -96,6 +92,7 @@ export const ImageContainer = styled.a`
     width:100%;
     height:100%;
     position: relative;
+    margin-top:2vh;
   }
 `
 
@@ -103,7 +100,7 @@ export const CustomButtonContainer= styled.a`
   text-decoration:none;
   width: 20vw;
   height: 50px;
-  margin-top:50px;
+  margin-top:30px;
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
@@ -114,7 +111,7 @@ export const CustomButtonContainer= styled.a`
   cursor: pointer;
   display: flex;
   justify-content: center; 
-  background-color: black;
+  background-color: #89715b;
   color: white;
   border: none;
   transition:.5s;
@@ -123,6 +120,7 @@ export const CustomButtonContainer= styled.a`
     
   }
   @media screen and (max-width: 992px) {
-    font-size:0.5rem
+    font-size:0.5rem;
+    margin-top:10px;
   }
 `

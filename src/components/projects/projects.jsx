@@ -1,23 +1,20 @@
 import React from 'react';
 import { ProjectsContainer,ProjectPage } from './projects.style';
 // import Fade from 'react-reveal/Fade';
-import { Paragraph,Container,Description } from '../about/about.style';
+import { Container } from '../about/about.style';
 import { DATA } from './data';
+import '../about/about.scss';
+import './projects.scss'
 
 import ProjectCard from '../projectCard/projectCard';
 
 export default function projects() {
   return (
     <ProjectPage id='projects'>
-      <Container style={{flexDirection:'row',marginBottom:'3vh'}}>
-      <Paragraph>
-        02/
-      </Paragraph>
-      <Description style={{flexDirection:'row',justifyContent:'space-around',marginTop:'0vh'}}>
-              <p style={{fontSize:'20px',fontWeight:'400',lineHeight:'1.32',width:'20%',marginTop:'5vh'}} >
-                RECENT PROJECTS
-              </p>
-              </Description>
+      <Container id='projectContainer' >
+      <h2 className='main-title' style={{margin:'0 0 5vh 0',paddingLeft:'2.2%',paddingTop:'0'}}>
+        Works
+      </h2>
       </Container>
       <ProjectsContainer>
         {

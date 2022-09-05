@@ -1,8 +1,8 @@
 
 
 .email{
-  font-size: 5rem;
-  color: black;
+  font-size: 2.5rem;
+  color: #89715b;
   text-decoration: none;
   background: 
   linear-gradient(to right, rgb(53, 65, 56), rgb(0, 0, 0)),
@@ -12,10 +12,9 @@
   background-repeat: no-repeat;
   transition: background-size 400ms;
   cursor: none;
-  text-transform: uppercase;
+  font-weight: 500;
   @media screen and (max-width: 992px){
-    font-size: 56px;
-    width: 70%;
+    font-size: calc(1.3rem + 0.6vw);
     line-height: 1.32;
     background: none;
     text-decoration: underline;
@@ -29,6 +28,17 @@
   display: none;
   @media screen and (max-width: 992px){
     display: flex;
+  }
+}
+
+.workT{
+  font-size:24px;
+  font-weight:400;
+  line-height:1.32;
+  width:fit-content;
+  color:rgba(255,255,255,0.5);
+  @media screen and (max-width: 992px){
+    font-size: 20px;
   }
 }
 

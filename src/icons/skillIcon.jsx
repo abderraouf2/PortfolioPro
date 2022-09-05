@@ -1,11 +1,12 @@
 import React from 'react';
 import { Image,Container } from './skillIcon.style'
-
-export default function skillIcon({image, title}) {
+import Fade from 'react-reveal/Fade';
+export default function skillIcon({image}) {
   return (
     <Container>
-      <Image src={image} alt="" />
-      <h5>{title}</h5>
+      <Fade>
+        <Image src={image} alt="" />
+      </Fade>
     </Container>
   )
 }

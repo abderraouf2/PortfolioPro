@@ -1,40 +1,46 @@
 import styled from 'styled-components';
 import { css } from 'styled-components';
-
+// #e1dfdd
 export const TopContainer = styled.div`
-padding : 1% 2%;
+height:119vh;
+padding:0;
 overflow-x:hidden;
-background-color: #e1dfdd;
+background: black;
 margin-bottom:0;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+
 @media screen and (max-width: 992px) {
+  height:120vh;
   display:flex;
   flex-direction:column;
 }
 `
 const Shared = css`
-    height: 80%;
+    height: 90vh;
+    top:0;
     width:100vw;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Heebo', sans-serif;
+    background-color: rgba(0, 0, 0, .6);
+    left:0;
+    font-family: 'Zilla Slab', serif;
     font-size: 94px;
     font-weight: 700;
-    line-height:6vh;  
-    padding-top:2%;
-    margin-top:15vh;
+    padding-top:15vh;
+    margin:0 112.5px 0 0;
+    padding-left: 112.5px;
+    z-index: 2;
     @media screen and (max-width: 992px) {
       line-height:0.5;  
-      height:35%;
+      height:75vh;
       width:100%;
       font-size:56px;
       font-weight: 500;
       display: flex;
-      margin-bottom:2%;
       flex-direction:column;
       margin-left:0;
-      margin-top:20vh;
+      padding-left: 30px;
+      padding-top:25vh;
     }
 `
 
@@ -47,9 +53,13 @@ export const Div = styled.div`
   }
 `
 
-export const LeftHeadContainer = styled.h1`
+export const LeftHeadContainer = styled.div`
    ${Shared},
    text-align:left;
+   color:#fff;
+   display:flex;
+   flex-direction: column;
+   margin-bottom:0
     `
 
 export const RightHeaderContainer = styled.h1`

@@ -7,7 +7,7 @@ export const DATA = [
     id:1,
     img: Netflix,
     title:'Netflix-Clone',
-    description:'An app made with NextJS, Hasura, GraphQL, youtube api and much more api. U can log in, like or dislike a video, and whatch them again if u want',
+    description:'An app made with NextJS, Hasura, GraphQL, youtube api. U can log in, like, dislike a video and watch them again ...',
     url:'https://netflix-clone-abderraouf2.vercel.app/'
   },
   {

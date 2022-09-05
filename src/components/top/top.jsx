@@ -1,41 +1,55 @@
 import React from 'react';
 import './top.scss'
 
-import { TopContainer,LeftHeadContainer,RightHeaderContainer,Image } from './top.style';
+import { TopContainer,LeftHeadContainer } from './top.style';
 import Header from '../header/header';
 import Fade from 'react-reveal/Fade';
-import { Zoom } from 'react-reveal';
-import Raouf from './raouf1.png';
+import Netflix from './netflix.jpeg';
+
+import {AiOutlineArrowDown} from 'react-icons/ai'
 
 
 
-export default function Top({ImgLoadded}) {
+class Top extends React.Component {
+
+  
+  // componentDidMount = () => {
+  //   const z = document.getElementById('rr');
+  //   const ra = () => {
+  //     console.log("Helloooooo");
+  //   }
+    
+  //   z.addEventListener("mouseover",ra);
+  // }
+  render(){
   return (
     <TopContainer id='top'>
+      <img className='bgImg' src={Netflix} alt="" />
+      {/* <p id='rr' style={{zIndex:'5'}}>Raouf</p> */}
       <Header />
       <LeftHeadContainer>
-      <Fade left cascade>
-        CREATIVE
-        <br />
-        DEVELOPER
-        <br />
-        <Zoom>
-        <Image src={Raouf} onLoad={()=>{ImgLoadded()}} />
-        </Zoom>
-      </Fade>
-      </LeftHeadContainer>
-      <RightHeaderContainer>
-        <div className='bottom'>
-        <Fade left cascade >
-          MIMOUNE
-          <br />
-          ABDERRAOUF
-        </Fade>
+          <h5>
+            Latest project
+          </h5>
+          <h1>
+            Netflix Clone
+          </h1>
+          <Fade right cascade>
         <p>
-        &#x21C3;
+          Inspired from netflix. I made this app  with NextJS, Hasura, GraphQL, youtube api...etc.<br /> U can log in, like or dislike a video, and whatch them again if u want
+        </p></Fade>
+        <a className='see' href="https://netflix-clone-abderraouf2.vercel.app/">see project</a>
+        <p className='down'>
+          <AiOutlineArrowDown className='downI' /> 
         </p>
-        </div>
-      </RightHeaderContainer>
+      </LeftHeadContainer>
+      <div className='clientsWrapper'>  
+      <div className='clients'>
+      </div>
+      </div>
     </TopContainer>
   )
 }
+}
+
+export default Top;

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 export const SkillComponent= styled.div`
-width:100%;
 
 `
 
@@ -24,16 +23,24 @@ export const Title = styled.h1`
 export const SkillCard = styled.div`
   width: 100%;
   display: flex;
-  justify-content:flex-start;
+  justify-content:center;
   flex-direction:row;
   opacity:100%;
-  
+  @media screen and (max-width: 992px){
+    width:90%;
+    left:0
+  }
 `
 
 export const Icons1 = styled.div`
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  margin:4%;
+  width:70%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:20px;
+  @media screen and (max-width: 992px){
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+    width:100%;
+    left:0
+  }
 `

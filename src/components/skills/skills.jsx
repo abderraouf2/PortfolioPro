@@ -11,16 +11,10 @@ export default function skills() {
         <SkillCard>
           <Icons1>  
           {
-            icons.filter((icon,index)=> icon.id<5)
-            .map((icon)=>(<SkillIcon image={icon.logo} title={icon.title.toUpperCase()} />))
+            icons.map((icon)=>(<SkillIcon key={icon.id} image={icon.logo} />))
           }
           </Icons1>
-          <Icons1> 
-           {
-            icons.filter((icon,index)=> 4<icon.id)
-            .map((icon)=>(<SkillIcon image={icon.logo} title={icon.title.toUpperCase()} />))
-            }
-          </Icons1>
+          
         </SkillCard>
       </SkillComponent>
   )

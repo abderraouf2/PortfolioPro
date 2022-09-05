@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectPage = styled.div`
-margin-top:15%;
+background-color:#141414;
 @media screen and (max-width: 992px) {
   overflow-x:hidden
 }

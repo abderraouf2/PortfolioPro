@@ -36,8 +36,8 @@ export default function ProjectCard({title,image, desc,url}) {
                     >{title}
                     
         </ProjectTitle>
-        <p>{desc}</p>
-        <CustomButtonContainer href={url}>
+        <p style={{ width:'80%',marginLeft:'5%',fontWeight:'100',textTransform:'lowerCase' }}>{desc}</p>
+        <CustomButtonContainer style={{marginLeft:'5%'}} href={url}>
            Live preview
            </CustomButtonContainer>
         </Details>
@@ -69,6 +69,6 @@ export default function ProjectCard({title,image, desc,url}) {
     </Zoom>
         <Cursor mouseIn={mouseIn} className='a' cursorX={cursorX} cursorY={cursorY} text='view more'/>
         
-    </div>
+  </div>
   )
 }

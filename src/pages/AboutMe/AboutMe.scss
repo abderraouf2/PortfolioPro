@@ -1,32 +1,64 @@
 
 
 .cv{
-  width: 100%;
-  height: 300vh; 
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+.homePage{
+  width: 100vw;
+  overflow-x: hidden;
 }
 #education{
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  height: fit-content;
   @media screen and (max-width: 992px) {
-   flex-direction: column;
+   
   }
 }
 #font{
-  font-size: 124px;
+  font-size: 58px;
   line-height: .5;
   font-weight: 200;
-  width: 75%;
+  width: 100%;
+  height: 65vh;
   @media screen and (max-width: 992px) {
     font-size:2.5rem;
     font-weight: 500;
-    margin-top: 5vh;
+    padding-top: 10vh;
   }
 }
 #skills{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
   @media screen and (max-width: 992px) {
-    flex-direction: column;
+    
+  }
+  // #title{
+  //   padding-left: 8%;
+  //   @media screen and (max-width: 992px) {
+  //     margin:12% 10% 10% 0;
+  //   }
+  // }
+}
+#title{
+  width:90%;
+  @media screen and (max-width: 992px) {
+    margin:12% 10% 10% 0;
+  }
+}
+#title2{
+  width:90%;
+  @media screen and (max-width: 992px) {
+    margin:12% 10% 10% 0;
   }
 }
 
@@ -34,20 +66,38 @@
   font-size:x-large;
   font-weight:400;
   line-height:1.32;
-  width:50%;
+  width:85%;
+  margin-left: 7.5%;
   @media screen and (max-width: 992px) {
-    width: 95%;
+    width: 90%;
+    margin-left: 3%;
+  }
+}
+.bannerIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @media screen and (max-width: 992px) {
+    justify-content: flex-start;
   }
 }
 .header{
   width: 100%;
+  height: 10vh;
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
+  background-color: #141414;
   .link{
-    margin: 5% 10%;
-    color: black;
+    margin: 2% 10%;
+    color: #89715b;
+  }
+  @media screen and (max-width: 992px) {
+    height: auto;
+   .link{
+     margin: 5% 10%;
+   }
   }
 }

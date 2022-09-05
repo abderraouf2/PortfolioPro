@@ -13,22 +13,16 @@ padding-right:40px;
 top:0;
 position:fixed;
 z-index:3;
-background: linear-gradient(to bottom, var(--gradient-stops));
 
---gradient-from: black;
---gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
-opacity:100%;
-left:0
 
 `
 const sharedProps = css`
-color: black;
+color: white;
 text-decoration:none;
 font-family: 'Libre Baskerville', serif;
 font-weight:700;
 &:hover{
-  color:#464c47;
-  border: none;
+  color:rgb(219, 204, 204);
 }
 @media screen and (max-width: 992px) {
   font-size:1rem; 
@@ -39,48 +33,54 @@ font-weight:700;
 export const LogoContainer = styled(Link)`
 height: 100%;
 width: fit-content;
-padding:2%;
+position: absolute;
+top:35%;
+left:112.5px;
 ${sharedProps};
 cursor:pointer;
 @media screen and (max-width: 992px) {
-  z-index:3;
+  left:30px
 }
 `
 
 export const OptionsContainer = styled.div`
-width: 30%;
-height: 100%;
-padding:10px;
-display: flex;
-align-items: center;
-justify-content: center;
-@media screen and (max-width: 992px) {
+// width: 30%;
+// height: 100%;
+// padding:10px;
+// align-items: center;
+// justify-content: center;
+// @media screen and (max-width: 992px) {
   opacity:1;
   height:100vh;
-  top:0;
+  width:100%;
+  display: flex;
+  padding-top:12vh;
   flex-direction:column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   background-color:#464c47;
   width:100%;
   animation: BigText_chars-in__e_wCk 1.25s varcubic-bezier(0.62,0.05,0.01,0.99);
-}
+// }
 
 html { forwards;
 }
 `
 
 export const OptionLink= styled(Link)`
-padding: 10px 15px;
+padding: 15px 0px;
 cursor: pointer;
 ${sharedProps};
+width:85%;
+margin-left:1%;
+border-bottom:2px solid white;
 @media screen and (max-width: 992px) {
   color:white;
-  font-size:3.5rem;
+  font-size:1.5rem;
   lign-height:1.25;
   text-transform: uppercase;
-  font-weight:600;
+  font-weight:400;
   padding:0;
-  margin: 5% 0;
+  margin: 5% 2%;
 }
 `
