@@ -15,7 +15,7 @@ export const DATA = [
     img: Clothing,
     title:'Clothing-Brand',
     description:'A website where you can view, add to a cart and pay for products (clothes)',
-    url:'https://raoufs-clothing.herokuapp.com'
+    url:'https://clothing-brand.onrender.com'
   }
   
   // {
